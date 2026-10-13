@@ -1,0 +1,60 @@
+<html>
+    <head>
+
+    </head>
+    <boddy>
+        <h1>Formularios</h1>
+
+        <form action="anibal.ruiz1@educa.madrid.org" method="post">
+            <fieldset>
+                <legend>Personaje</legend>
+
+                <label for="superheroe">Superhéroe favorito</label>
+
+                <input type="text" id="superheroe" name="superheroe"
+                    list="superheroes" placeholder="Escribe o elige un superhéroe">
+
+                <datalist id="superheroes">
+                    <option value="Hulk">
+                    <option value="Ironman">
+                    <option value="Capitán América">
+                    <option value="Spiderman">
+                    <option value="Batman">
+                    <option value="Superman">
+                </datalist>
+
+                <br>
+                <br>
+
+                <label>Color </label>
+                <input type="color" name="color"></input>
+
+                <br>
+                <br>
+
+            </fieldset> 
+       
+            <fieldset>
+                <legend>Datos de la persona</legend>
+                <label>Nombre</label>
+                <input type="text" id="Nombre" name="Nombre">
+                <br>
+                <br>
+
+                <label>Telefono</label>
+
+           
+                <input type="text" id="codigo" name="codigo"
+                    pattern="[0-9]{7}"
+                    maxlength="7"
+                    minlength="7"
+                    required>
+                Formato 9999999
+            </fieldset>
+            <br>
+            <br>
+            <input type="submit" value="Enviar" 
+                style="border-radius: 30px; padding: 6px 20px; cursor: pointer;">
+        </form>
+    </boddy>
+</html>
