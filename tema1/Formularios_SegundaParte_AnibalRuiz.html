@@ -99,7 +99,50 @@
             <br>
             <br>            
               
-           
+           <fieldset>
+                <legend>5 TIPOS DIFERENTES</legend>
+                <label>Archivo</label>
+                <br>
+                <input type="file" id="archivo" name="archivo" accept="image/png,image/jpeg">  
+                <br>
+                <br>
+                <label>Fecha sin zona horaria </label>
+                <input type="month" id="start" name="start" min="2010-03" value="2026-05" />
+                <br>
+                <br>
+                <div>
+                <label>Volumen</label>
+                <br>
+                <input type="range" id="volume" name="volume" min="0" max="11" />
+                <label for="volume">Volume</label>
+                </div>
+                <br>
+                <label for="appointment">Choose a time for your meeting:</label>
+                <input
+                    type="time"
+                    id="appointment"
+                    name="appointment"
+                    min="09:00"
+                    max="18:00"
+                    required />
+                <label for="camp-week">Choose a week in May or June:</label>
+                <br>
+                <br>
+                <label>SEMANA</label>
+                <BR>
+                <input
+                    type="week"
+                    name="week"
+                    id="camp-week"
+                    min="2010-W18"
+                    max="20126-W26"
+                    required />
+           </fieldset>
+
+
+
+            <br>
+            <br> 
             <input type="submit" value="Enviar" 
                 style="border-radius: 30px; padding: 6px 20px; cursor: pointer; background-color: rgb(82, 29, 29);color: aliceblue;">
             <input type="reset" value="Resetear" style="border-radius: 20px; padding: 6px 20px; cursor: pointer; color: aliceblue; background-color: rgb(218, 68, 68);">   
