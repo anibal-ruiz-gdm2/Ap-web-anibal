@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>prueba deestilos css externo</title>
+        <link rel="stylesheet" href="ejemplo_inicial.css">
+        <style>
+            p{
+                background-color: rgb(128, 128, 207);
+                font-family:v Arial ;
+                font-size: 26px;
+                font-style: italic;
+                font-weight: bolder;
+                color: blue;
+
+
+
+            }   
+            .parrafo{
+                background-color: rgb(240, 133, 133);
+
+
+            }
+            .padre{
+                background-color: greenyellow;
+
+
+            }
+
+            #logo{
+                background-color: orange;
+
+
+            }
+        </style>
+    </head>
+    <body>
+        <p>primero</p>
+        <p class="parrafo">segundo</p>
+        <p>tercero</p>
+        <div class="padre">
+            asdfghadfghhfdsaerdjhg
+            <p>cuarto</p>
+            <p id="logo">parrafo de id</p>
+        </div>
+    </body>
+</html>
