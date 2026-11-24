@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CV Anibal Ruiz</title>
+        <link rel="icon" type="image/x-icon" href="imagenes/favicon.ico">
+
+        <style>
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #243247;
+            background: #f3f6fa;
+        }
+
+        header, nav, main, footer {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        header {
+            padding: 30px 24px;
+            background: #17365d;
+            color: white;
+        }
+
+        nav {
+            padding: 14px 24px;
+            background: #244d78;
+        }
+
+        nav a {
+            color: white;
+            margin-right: 22px;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 24px;
+        }
+
+        section {
+            background: white;
+            padding: 22px;
+            margin: 18px 0;
+            border-radius: 10px;
+        }
+
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 18px;
+        }
+
+        figure {
+            margin: 0;
+        }
+
+        figure img {
+            width: 100%;
+            height: 170px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        figcaption {
+            font-size: .9rem;
+            color: #526174;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ccd5df;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background: #e7eef6;
+        }
+
+        footer {
+            padding: 20px 24px;
+            text-align: center;
+            color: #526174;
+        }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>CV Anibal Ruiz</h1>
+            <img src="imagenes/gato.png" height="100px">
+            <ul>
+                <li>Avenida petunias verdes</li>
+                <li>646 46 46 46</li>
+                <li>tetete@gmail.com</li>
+            </ul>
+        </header>
+        <nav>
+            <a href="./index.html">Inicio</a>
+            <a href="./aficiones.html">Aficiones</a>
+            <a href="./contacto.html">Contacto</a>
+        </nav>
+        <main>
+            <section><h1>Aficiones</h1></section>
+            <section>
+                <div style="background-color: rgb(178, 189, 248);padding: 10px;">
+                    <h2>Quedar con los amigos<img src="./imagenes/amigos.png" width="200px" style="float:right"></h2>
+                    <p>Es mi aficion favorita porque es donde mejor me lo paso y donde mas tiempo paso,suelo quedar con mis amigos en los pueblos cercanos como Soto del Real o Colmenar Viejo.</p>
+                    <br>
+                    <br>
+                </div>
+            </section>
+            <!--formacion academica-->
+            <section>
+                <div style="background-color: rgb(151, 151, 156);padding: 10px;">
+                    <h2>Jugar videojuegos<img src="./imagenes/mando.png" width="150px" style="float: right;" ></h2>
+                    <p>Juego vieojuegos para pasar el tiempo y disfrutar de nuevos mundos virtuales,suelo jugar ARPG,Shooters y mundo abierto.</p>
+                    <ul>
+                        <li>Los ARPG son género de videojuegos que combina las mecánicas de progresión y personalización propias de los juegos de rol</li>
+                        <li>Los shooters son juegos especializados en disparos que se puede jugar solo o en equipo.</li>
+                        <li>Un juego de mundo abierto es el que te permite moverte libremente y no estas atado a un ajugabilidad lineal.</li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <div style="background-color: peachpuff; padding: 10px;">
+                    <h2>Comer y hacer shushi<img a src="./imagenes/shuhi.png" width="200px" style="float: right; border-radius: 33%;" ></h2>
+                    <p>El shushi o la comida oriental es una de mis pasiones,me parece que su forma de cocinar es asombrosa ademas de que los sabores son alucinantes</p>
+                    <ol>
+                        <li>Los mejores sitios que yo conozca para ir son:</li>
+                        <ol>
+                            <li><a href="https://enlavaguada.com/restauracion/amazonia-chic">Madrid/La vaguada/Shuhi amazonia</a></li>
+                            <li><a href="https://www.eatthis.es/">Colmenar viejo/</a></li>
+                        </ol>
+                    </ol> 
+                </div>
+            </section>
+            <section>
+                 <table border="1">
+                <tr>
+                    <th>Actividad</th>
+                    <th>Frecuencia</th>
+                    <th>Interés</th>
+                </tr>
+                <tr>
+                    <td>Quedar con los amigos</td>
+                    <td>Semanal</td>
+                    <td>Alto</td>
+                </tr>
+                <tr>
+                    <td>Jugar videojuegos</td>
+                    <td>Diario</td>
+                    <td>Alto</td>
+                </tr>
+                <tr>
+                    <td>Comer y hacer sushi</td>
+                    <td>Ocasional</td>
+                    <td>Alto</td>
+                </tr>
+            </table>
+            </section>
+        </main>
+        <footer>
+           <p>Anibal Ruiz Vidal</p>
+        </footer>
+    </body>
+</html>

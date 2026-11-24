@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CV Anibal Ruiz</title>
+        <link rel="icon" type="image/x-icon" href="imagenes/favicon.ico">
+
+        <style>
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #243247;
+            background: #f3f6fa;
+        }
+
+        header, nav, main, footer {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        header {
+            padding: 30px 24px;
+            background: #17365d;
+            color: white;
+        }
+
+        nav {
+            padding: 14px 24px;
+            background: #244d78;
+        }
+
+        nav a {
+            color: white;
+            margin-right: 22px;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 24px;
+        }
+
+        section {
+            background: white;
+            padding: 22px;
+            margin: 18px 0;
+            border-radius: 10px;
+        }
+
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 18px;
+        }
+
+        figure {
+            margin: 0;
+        }
+
+        figure img {
+            width: 100%;
+            height: 170px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        figcaption {
+            font-size: .9rem;
+            color: #526174;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ccd5df;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background: #e7eef6;
+        }
+
+        footer {
+            padding: 20px 24px;
+            text-align: center;
+            color: #526174;
+        }
+        </style>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contacto</title>
+        <link rel="icon" href="imagenes/favicon.png" type="image/png">
+    </head>
+
+    <body>
+
+        <header>
+            <h1>Contacto profesional</h1>
+            <p>Si estás interesado en mi perfil profesional, puedes ponerte en contacto conmigo mediante este formulario.</p>
+        </header>
+
+        <nav>
+            <a href="index.html">Mi currículum</a>
+            <a href="aficiones.html">Mis aficiones</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+
+        <main>
+
+            <section>
+                <h2>Formulario de contacto</h2>
+
+                <form action="#" method="post" enctype="multipart/form-data">
+
+                    <fieldset>
+                        <legend>Datos personales</legend>
+
+                        <label for="nombre">Nombre y apellidos:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+
+                        <br><br>
+
+                        <label for="correo">Correo electrónico:</label>
+                        <input type="email" id="correo" name="correo" required>
+
+                        <br><br>
+
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono">
+
+                        <br><br>
+
+                        <label for="fecha">Fecha de disponibilidad para incorporarse:</label>
+                        <input type="date" id="fecha" name="fecha">
+
+                        <br><br>
+
+                        <label for="cv">Adjuntar CV en PDF:</label>
+                        <input type="file" id="cv" name="cv" accept=".pdf">
+
+                    </fieldset>
+
+                    <br>
+
+                    <fieldset>
+                        <legend>Motivo del contacto</legend>
+
+                        <label for="motivo">Selecciona el motivo:</label>
+
+                        <select id="motivo" name="motivo" required>
+                            <option value="">Selecciona una opción</option>
+                            <option value="practicas">Oferta de prácticas</option>
+                            <option value="empleo">Oferta de empleo</option>
+                            <option value="informacion">Solicitud de información</option>
+                            <option value="entrevista">Entrevista</option>
+                            <option value="otros">Otros motivos</option>
+                        </select>
+
+                        <br><br>
+
+                        <label for="area">Área profesional de interés:</label>
+                        <input type="text" id="area" name="area" list="areas">
+
+                        <datalist id="areas">
+                            <option value="Administración de sistemas">
+                            <option value="Redes informáticas">
+                            <option value="Desarrollo web">
+                            <option value="Ciberseguridad">
+                            <option value="Soporte técnico">
+                        </datalist>
+
+                    </fieldset>
+
+                    <br>
+
+                    <fieldset>
+                        <legend>Medio de contacto preferido</legend>
+
+                        <input type="radio" id="email" name="contacto" value="email">
+                        <label for="email">Correo electrónico</label>
+
+                        <br>
+
+                        <input type="radio" id="telefono_contacto" name="contacto" value="telefono">
+                        <label for="telefono_contacto">Teléfono</label>
+
+                    </fieldset>
+
+                    <br>
+
+                    <fieldset>
+                        <label for="mensaje">Escribe tu mensaje:</label>
+
+                        <br><br>
+
+                        <textarea id="mensaje" name="mensaje" rows="6" cols="50"></textarea>
+
+                        <br><br>
+
+                        <input type="checkbox" id="autorizacion" name="autorizacion" required>
+                    <legend>Mensaje y autorización</legend>
+
+                        <label for="mensaje">Escribe tu mensaje:</label>
+
+                        <br><br>
+
+                        <textarea id="mensaje" name="mensaje" rows="6" cols="50"></textarea>
+
+                        <br><br>
+
+                        <input type="checkbox" id="autorizacion" name="autorizacion" required>
+                        <label for="autorizacion">
+                            Autorizo que se utilicen los datos facilitados para responder a esta solicitud.
+                        </label>
+
+                    </fieldset>
+
+                    <br>
+
+                    <input type="submit" value="Enviar formulario">
+                    <input type="reset" value="Limpiar formulario">
+
+                </form>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>© 2026 - Mi página web personal</p>
+        </footer>
+    </body>
+</html>
+
