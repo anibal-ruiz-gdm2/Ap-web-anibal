@@ -136,7 +136,7 @@ td:nth-child(1) {
 
 }
 .PHY:hover{
-    background-color: rgb(128, 128, 128);
+    background-color: rgb(128, 64, 64);
 }
 .SOST:hover{
     background-color: rgb(13, 83, 13);
