@@ -3,168 +3,283 @@
 <head>
     <title id="inicio">Listas y Tablas</title>
     <style>
+     /* ESTILO GENERAL DE LA PAGINA */
+
+
+/* Fondo de la pagina */
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: Arial;
+}
+
+/* Tabla */
+table {
+    width: 90%;
+    margin: auto;
+}
+
+/* Titulo */
+caption {
+    background-color: purple;
+    color: rgb(255, 255, 255);
+    border: 5px solid black;
+    border-radius: 20px;
+    font-size: 50px;
+    padding: 10px;
+}
+
+/* Todas las celdas */
+th, td {
+    text-align: center;
+    vertical-align: middle;
+    width: 10%;
+    padding: 2%;
+    border: 5px outset gray;
+}
+
+/* Dias de la semana */
+th {
+    background-color: rgb(132, 195, 216);
+    color: black;
+    border-radius: 10px;
+}
+
+/* Primera casilla vacia */
+th:nth-child(1) {
+    background-color: rgb(255, 255, 255);
+    color: white;
+    border: none;
+}
+
+/* Primera columna (horas) */
+td:nth-child(1) {
+    background-color: rgb(111, 111, 211);
+    color: white;
+}
+
+.patio {
+    background-color: rgb(255, 255, 255);
+}
+
+.APW{
+    background-color: rgb(250, 250, 250);
+}
+
+.SEG{
+    background-color: rgb(255, 255, 255);
+
+}
+    
+.SOR{
+    background-color: rgb(248, 248, 248);
+
+}
+
+.SERV{
+    background-color: rgb(248, 248, 248);
+
+}
+
+.ING{
+    background-color: rgb(255, 255, 255);
+
+}
+
+.IPE{
+    background-color: rgb(255, 255, 255);
+
+}
+.PHY{
+    background-color: rgb(255, 255, 255);
+}
+.SOST{
+    background-color: rgb(245, 250, 245);
+}
+
+.DIG{
+    background-color: rgb(255, 255, 252);
+}
 
 
 
 
+.patio:hover {
+    background-color: khaki;
+}
 
+.APW:hover{
+    background-color: lightblue;
+}
 
+.SEG:hover{
+    background-color: rgb(228, 205, 103);
 
+}
+    
+.SOR:hover{
+    background-color: rgb(255, 98, 247);
 
+}
 
+.SERV:hover{
+    background-color: rgb(115, 209, 240);
 
+}
 
+.ING:hover{
+    background-color: rgb(255, 128, 78);
 
+}
 
+.IPE:hover{
+    background-color: rgb(255, 137, 186);
 
+}
+.PHY:hover{
+    background-color: rgb(128, 128, 128);
+}
+.SOST:hover{
+    background-color: rgb(128, 255, 128);
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.DIG:hover{
+    background-color: rgb(255, 255, 128);
+}
 
     </style>
+
 </head>
-    <body>
+
+</head>
+<body>
     <h1>Tablas de prueba</h1>
-   
-        <table >
-            <caption >SMR2 26-27</caption>
-            
-            <tr>
-                <th >Hora</th>
-                <th >Lunes</th>
-                <th >Martes</t>
-                <th >Miercoles</th>
-                <th >Jueves</th>
-                <th >Viernes</th>
-                
-            </tr>
-            <tr>
-                <td>8:30-9:25</td>
-                <td>Sostenibilidad</td>
-                <td rowspan="2"> Sor</td>
-                <td rowspan="2">Sor</td>
-                <td rowspan="2">Servicios en red</td>
-                <td>Digitalizacion</td>
-    
-            </tr>
-            <tr>
-                <td>9:25-10:20</td>
-                <td>Sor</td>              
-                <td>Ipe</td>
-            </tr>
-            <tr>
-                <td>10:20-11:15</td>
-                <td>Ipe</td>
-                <td>Aplicaciones web
-                     <a href="https://aulavirtual32.educa.madrid.org/ies.sierradeguadarrama.soto/course/view.php?id=298">
-                        <img src="../asset.img/PHYTHON.jpeg" style="width:50px">
-                    </a>
 
-                </td>
-                <td>Servicios en red</td>
-                <td>Sor</td>
-                <td>Aplicaciones web
-                     <a href="https://aulavirtual32.educa.madrid.org/ies.sierradeguadarrama.soto/course/view.php?id=298">
-                        <img src="../asset.img/PHYTHON.jpeg" style="width:50px">
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <td>11:15-11:40</td>
-                <td style="text-align:center" colspan="5">Patio</td>
-            </tr>
-            <tr>
-                <td>11:40-12:35</td>
-                <td>Ingles</td>
-                <td>Aplicaciones web
-                    <a href="https://aulavirtual32.educa.madrid.org/ies.sierradeguadarrama.soto/course/view.php?id=298">
-                        <img src="../asset.img/PHYTHON.jpeg" style="width:50px">
-                    </a>
-                </td>
-                <td>Servicios en red</td>
-                <td>Sor</td>
-                <td rowspan="2">
-                     <a href="https://aulavirtual32.educa.madrid.org/ies.sierradeguadarrama.soto/course/view.php?id=297">Seguridad Informatica</a>
-                </td>
-            </tr>
-            <tr>
-                <td>12:35-13:30</td>
-                <td rowspan="2">Modulo profesional</td>
-                <td rowspan="2">Servicios en red</td>
-                <td>
-                    <a href="https://aulavirtual32.educa.madrid.org/ies.sierradeguadarrama.soto/course/view.php?id=297">Seguridad Informatica</a>
-                </td>
-                <td rowspan="">Modulo profesional</td>
-            </tr>
-            <tr>
-                <td>13:30-14:25</td>
-                <td>Ingles </td>
-                <td>Aplicaciones web
-                     <a href="https://aulavirtual32.educa.madrid.org/ies.sierradeguadarrama.soto/course/view.php?id=298">
-                        <img src="../asset.img/PHYTHON.jpeg" style="width:50px">
-                    </a>
-                </td>
-                <td>Servicios en red</td>
-            </tr>
-            <tr>
-                <td colspan="6">Fina de clase</td>
-            </tr>
-        </table>
-        <ol>
-            <li>
-                <a href="https://aulavirtual32.educa.madrid.org/ies.sierradeguadarrama.soto/course/view.php?id=298">APWEB:Aplicaciones web</a>
-            </li>
-            <li>
-                <a href="https://aulavirtual32.educa.madrid.org/ies.sierradeguadarrama.soto/course/view.php?id=297">SEGINF:Seguridad informatica</a>
-            </li>
-            <li>
-                <a href="https://aulavirtual32.educa.madrid.org/ies.sierradeguadarrama.soto/course/view.php?id=383">SOR:Servicios operativos en red</a>
-            </li>
-            <li>
-                <a href="https://aulavirtual32.educa.madrid.org/ies.sierradeguadarrama.soto/course/view.php?id=484">SERVRED:Servicios en red</a>
-            </li>
-            <li>
-                <a href="https://aulavirtual32.educa.madrid.org/ies.sierradeguadarrama.soto/course/view.php?id=530">ING:Inlges</a>
-            </li>
-            <li>
-                <a href="https://aulavirtual32.educa.madrid.org/ies.sierradeguadarrama.soto/course/view.php?id=499">IPE:Itinerario personal para la empleabilidad</a>
-            </li>
-        </ol>
-        <h4>
-            <a href="#inicio">Inicio</a>
-        </h4>
-    </body>
+    <table>
+        <caption>SMR2 26-27</caption>
+
+        <tr>
+            <th>Hora</th>
+            <th>Lunes</th>
+            <th>Martes</th>
+            <th>Miercoles</th>
+            <th>Jueves</th>
+            <th>Viernes</th>
+        </tr>
+
+        <tr>
+            <td>8:30-9:25</td>
+            <td class="SOST">Sostenibilidad</td>
+            <td class="SOR" rowspan="2">Sor</td>
+            <td class="SOR" rowspan="2">Sor</td>
+            <td class="SERV" rowspan="2">Servicios en red</td>
+            <td class="DIG">Digitalizacion</td>
+        </tr>
+
+        <tr>
+            <td>9:25-10:20</td>
+            <td class="SOR">Sor</td>
+            <td class="IPE">Ipe</td>
+        </tr>
+
+        <tr>
+            <td>10:20-11:15</td>
+            <td class="IPE">Ipe</td>
+            <td class="APW">
+                Aplicaciones web
+                <a href="https://aulavirtual32.educa.madrid.org/ies.sierradeguadarrama.soto/course/view.php?id=298">
+                    <img src="../asset.img/PHYTHON.jpeg" style="width:50px">
+                </a>
+            </td>
+            <td class="SERV">Servicios en red</td>
+            <td class="SOR">Sor</td>
+            <td class="APW">
+                Aplicaciones web
+                <a href="https://aulavirtual32.educa.madrid.org/ies.sierradeguadarrama.soto/course/view.php?id=298">
+                    <img src="../asset.img/PHYTHON.jpeg" style="width:50px">
+                </a>
+            </td>
+        </tr>
+
+        <tr>
+            <td>11:15-11:40</td>
+            <td class="patio" colspan="5">Patio</td>
+        </tr>
+
+        <tr>
+            <td>11:40-12:35</td>
+            <td class="ING">Ingles</td>
+            <td class="APW">
+                Aplicaciones web
+                <a href="https://aulavirtual32.educa.madrid.org/ies.sierradeguadarrama.soto/course/view.php?id=298">
+                    <img src="../asset.img/PHYTHON.jpeg" style="width:50px">
+                </a>
+            </td>
+            <td class="SERV">Servicios en red</td>
+            <td class="SOR">Sor</td>
+            <td class="SEG" rowspan="2">
+                <a href="https://aulavirtual32.educa.madrid.org/ies.sierradeguadarrama.soto/course/view.php?id=297">
+                    Seguridad Informatica
+                </a>
+            </td>
+        </tr>
+
+        <tr>
+            <td>12:35-13:30</td>
+            <td class="PHY" rowspan="2">Modulo profesional</td>
+            <td class="SERV" rowspan="2">Servicios en red</td>
+            <td class="SEG">
+                <a href="https://aulavirtual32.educa.madrid.org/ies.sierradeguadarrama.soto/course/view.php?id=297">
+                    Seguridad Informatica
+                </a>
+            </td>
+            <td class="PHY">Modulo profesional</td>
+        </tr>
+
+        <tr>
+            <td>13:30-14:25</td>
+            <td class="ING">Ingles</td>
+            <td class="APW">
+                Aplicaciones web
+                <a href="https://aulavirtual32.educa.madrid.org/ies.sierradeguadarrama.soto/course/view.php?id=298">
+                    <img src="../asset.img/PHYTHON.jpeg" style="width:50px">
+                </a>
+            </td>
+            <td class="SERV">Servicios en red</td>
+        </tr>
+
+        <tr>
+            <td colspan="6">Fina de clase</td>
+        </tr>
+    </table>
+
+    <ol>
+        <li class="APW">
+            <a href="https://aulavirtual32.educa.madrid.org/ies.sierradeguadarrama.soto/course/view.php?id=298">APWEB:Aplicaciones web</a>
+        </li>
+
+        <li class="SEG">
+            <a href="https://aulavirtual32.educa.madrid.org/ies.sierradeguadarrama.soto/course/view.php?id=297">SEGINF:Seguridad informatica</a>
+        </li>
+
+        <li class="SOR">
+            <a href="https://aulavirtual32.educa.madrid.org/ies.sierradeguadarrama.soto/course/view.php?id=383">SOR:Servicios operativos en red</a>
+        </li>
+
+        <li class="SERV">
+            <a href="https://aulavirtual32.educa.madrid.org/ies.sierradeguadarrama.soto/course/view.php?id=484">SERVRED:Servicios en red</a>
+        </li>
+
+        <li class="ING">
+            <a href="https://aulavirtual32.educa.madrid.org/ies.sierradeguadarrama.soto/course/view.php?id=530">ING:Inlges</a>
+        </li>
+
+        <li class="IPE">
+            <a href="https://aulavirtual32.educa.madrid.org/ies.sierradeguadarrama.soto/course/view.php?id=499">IPE:Itinerario personal para la empleabilidad</a>
+        </li>
+    </ol>
+
+    <h4>
+        <a href="#inicio">Inicio</a>
+    </h4>
+</body>
 </html>
-
-
-*Para unir arriba=colspan*
-*para unir abajo=rowspan*
