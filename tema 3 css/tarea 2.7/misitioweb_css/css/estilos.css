@@ -1,0 +1,238 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #b5c3c9;
+    color: #333333;
+}
+
+:root {
+    --color-principal: #000000;
+    --color-acento: #3498db;
+    --color-fondo: #f4f6f9;
+    --color-texto: #333333;
+}
+
+h1,h3{
+    color: var(--color-principal);
+}
+main {
+    max-width: 900px;      /* Ancho máximo del contenido */
+    margin: 20px auto;     /* 20px arriba/abajo y 'auto' a izquierda/derecha para centrar */
+    padding: 0 20px;       /* Espacio interior lateral para pantallas pequeñas */
+}
+
+
+section {
+    background-color: #ffffff;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #000000;
+}
+nav {
+    background-color: #2c3e50;
+    padding: 20px;
+    display: flex;              /* Coloca los enlaces en fila horizontal */
+    justify-content: space-evenly;    /* Centra los enlaces horizontalmente */
+    gap: 50px;   
+    border: 2px solid #000000;   /* Espacio de separación entre cada enlace */
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;      /* Quita el subrayado azul por defecto */
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: #ecb785;  /* Color de fondo inicial */
+}
+
+nav a:hover {
+    background-color: #f7a64b;  /* Cambia el fondo al pasar el ratón */
+}
+
+nav a.activo:hover {
+    background-color: #eb4f20;  /* Color distintivo para la página actual */
+    color: #ffffff;
+}
+
+.foto-perfil {
+    width: 170px;
+    height: 170px;
+    object-fit: cover;       /* Evita que la foto se aplaste o deforme */
+    border-radius:30%;      /* Convierte el cuadrado en un círculo */
+    border: 6px solid #3498db;
+}
+
+main ul {
+    list-style: none;       /* Quita los puntos negros por defecto */
+    padding-left: 10px;
+}
+
+main ul li {
+    margin-bottom: 10px; 
+    margin-right: 200px;      /* Separa verticalmente los elementos */
+}
+
+main ul li::before {
+    content: "> ";          /* Inserta este símbolo antes del texto (puedes usar ✔, •, ★...) */
+    color: #3498db;         /* Color distinto al texto */
+    font-weight: bold;
+    margin-right: 6px;
+}
+main ul ul {
+    padding-left: 25px;
+    margin-top: 6px;
+}
+
+main ul ul li::before {
+    content: "• ";
+    color: #428ad1;
+}
+
+main ol li::marker {
+    color: #ec9f2b;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;   /* Une los bordes de las celdas en una sola línea limpia */
+    margin-top: 15px;
+}
+
+th {
+    background-color: #38658f;
+    color: #ffffff;
+    text-align: left;
+    padding: 12px;
+}
+
+td {
+    padding: 10px 12px;
+    border-bottom: 1px solid #000000;   /* Solo línea horizontal inferior */
+}
+
+/* Filas pares con fondo suave (efecto cebra) */
+tr:nth-child(even) {
+    background-color: #c6d6e7;
+}
+
+/* Resaltar la fila al pasar el ratón */
+tbody tr:hover {
+    background-color: #eec89c;
+}
+
+
+fieldset {
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 50px;
+    background-color: #fafafa;
+}
+
+legend {
+    font-weight: bold;
+    color: #2c3e50;
+    padding: 5px;
+}
+
+
+label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="file"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #da8626;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+/* Efecto al hacer clic dentro de un campo */
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #e2a534;
+    background-color: #f1f1f1;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+input[type="submit"] {
+    background-color: #3498db;
+    color: #ffffff;
+}
+
+input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+input[type="reset"] {
+    background-color: #e0e0e0;
+    color: #333333;
+}
+
+input[type="reset"]:hover {
+    background-color: #cccccc;
+}
+
+
+
+
+
+
+
+#img1{
+    width: 200px;
+    height: 200px;
+    border-radius: 30%;
+    float: right;
+    object-fit: cover; 
+}
+
+#img2{
+    width: 200px;
+    height: 200px;
+    border-radius: 30%;
+    float: right;
+    object-fit: cover; 
+}
+
+#img3{
+    width: 200px;
+    height: 200px;
+    border-radius: 30%;
+    float: right;
+    object-fit: cover;       /* Evita que la foto se aplaste o deforme */
+
+}
